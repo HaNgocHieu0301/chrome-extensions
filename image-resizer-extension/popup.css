@@ -1,0 +1,46 @@
+body {
+  min-width: 300px;
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+.upload-section {
+  margin-bottom: 10px;
+}
+
+#drop-area {
+  border: 2px dashed #ccc;
+  text-align: center;
+  color: #aaa;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+#actions button {
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
+#drop-area img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.preview img {
+  max-width: 100%;
+  margin-top: 10px;
+}
+
+button {
+  margin-right: 10px;
+  padding: 5px 10px;
+}
+
+.mb-2 {
+  margin-bottom: 8px;
+}
+
+.mb-4 {
+  margin-bottom: 16px;
+}

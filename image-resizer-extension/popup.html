@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Image Resizer</title>
+    <link rel="stylesheet" href="/popup.css" />
+  </head>
+  <body>
+    <h1>Image Resizer</h1>
+
+    <!-- Cách 1: Khu vực kéo/thả -->
+    <div id="drop-area" class="mb-4">
+      <p id="placeholder-text">Kéo thả/Paste ảnh vào đây</p>
+      <!-- Khu vực Preview Ảnh -->
+      <img
+        id="preview-img"
+        src=""
+        alt="Preview Image"
+        style="display: none; max-width: 100%; height: auto"
+      />
+    </div>
+
+    <!-- Cách 2: Chọn file -->
+    <input class="mb-4" type="file" id="file-input" accept="image/*" />
+
+    <!-- Nút Resize -->
+    <div>
+      <button id="resize-btn" disabled>Resize Ảnh</button>
+      <button id="clear-btn" disabled>Clear</button>
+    </div>
+
+    <!-- Nút copy & download sau khi đã resize xong -->
+    <div id="actions" style="display: none">
+      <button id="copy-btn">Copy Ảnh</button>
+      <button id="download-btn">Download Ảnh</button>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

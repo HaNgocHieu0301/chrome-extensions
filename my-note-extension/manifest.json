@@ -1,0 +1,13 @@
+{
+    "name": "My Note Extension",
+    "description": "Tiện ích mở rộng để ghi chú nhanh trên Chrome",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "permissions": [
+      "storage"
+    ]
+}
+  
