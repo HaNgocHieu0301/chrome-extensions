@@ -1,0 +1,72 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 10px;
+  width: 300px;
+}
+#list-view,
+#detail-view {
+  display: none; /* Mặc định ẩn, ta sẽ bật tắt bằng JS */
+}
+.note-item {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+.note-item:hover {
+  background-color: #f0f0f0;
+}
+/* Khi hiển thị 1 chế độ, ta set display: block */
+.visible {
+  display: block !important;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+}
+textarea {
+  height: 100px;
+}
+button {
+  padding: 6px 12px;
+  margin-right: 5px;
+}
+#note-title {
+  font-size: 16px;
+}
+.note-item {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #ccc;
+  padding: 8px;
+  cursor: pointer;
+}
+.content-wrapper {
+  display: flex; /* hiển thị ngang */
+  flex-direction: row;
+  align-items: center; /* căn giữa theo trục ngang */
+  justify-content: space-between; /* đẩy hai bên về hai phía */
+  margin-top: 4px; /* chút khoảng cách so với title */
+}
+
+.note-title {
+  font-weight: bold;
+}
+
+.note-content {
+  font-size: 14px;
+  color: #555;
+  margin-right: 8px; /* Tạo khoảng cách cho nút Copy */
+}
+.content-wrapper button {
+  font-size: 12px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.note-item:hover {
+  background-color: #f0f0f0;
+}
